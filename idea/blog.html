@@ -1,0 +1,444 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Blog | Integro Psychotherapy</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#19e63c',
+							'background-light': '#f6f8f6',
+							'background-dark': '#112114',
+						},
+						fontFamily: {
+							display: ['Newsreader', 'serif'],
+						},
+						borderRadius: {
+							DEFAULT: '0.5rem',
+							lg: '1rem',
+							xl: '1.5rem',
+							full: '9999px',
+						},
+					},
+				},
+			};
+		</script>
+		<style>
+			body {
+				font-family: 'Newsreader', serif;
+			}
+		</style>
+	</head>
+	<body
+		class="bg-background-light text-slate-900 transition-colors duration-300 dark:bg-background-dark dark:text-slate-100"
+	>
+		<!-- Persistent Navigation Header -->
+		<header
+			class="sticky top-0 z-50 border-b border-primary/10 bg-background-light/80 px-4 py-4 backdrop-blur-md md:px-10 lg:px-40 dark:bg-background-dark/80"
+		>
+			<div class="mx-auto flex max-w-[1200px] items-center justify-between">
+				<div class="flex items-center gap-3">
+					<div class="text-primary">
+						<svg
+							class="h-8 w-8"
+							fill="currentColor"
+							viewbox="0 0 48 48"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+						</svg>
+					</div>
+					<h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+						Integro
+					</h1>
+				</div>
+				<nav class="hidden items-center gap-8 md:flex">
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">Services</a>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">About</a>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#"
+						>Neurofeedback</a
+					>
+					<a class="text-sm font-medium text-primary underline underline-offset-4" href="#">Blog</a>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">Contact</a>
+				</nav>
+				<div class="flex items-center gap-4">
+					<button
+						class="hidden rounded-xl bg-primary px-6 py-2 text-sm font-bold text-background-dark transition-all hover:opacity-90 sm:block"
+					>
+						Book a Session
+					</button>
+					<div
+						class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/20 text-primary"
+					>
+						<span class="material-symbols-outlined">person</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="mx-auto max-w-[1200px] px-4 py-12">
+			<!-- Hero Section -->
+			<section
+				class="relative mb-16 flex h-[400px] flex-col items-center justify-center overflow-hidden rounded-xl bg-slate-900 p-8 text-center"
+			>
+				<div class="absolute inset-0 opacity-60">
+					<img
+						alt="Sunlight filtering through a lush green forest canopy"
+						class="h-full w-full object-cover"
+						data-alt="Sunlight filtering through a lush green forest canopy"
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeVXq_mFAXB4VKkwgRLoK5UcOv8a8y6RrZIQ2mnJjZAb5mKDY80yurg86AbnckPZu9aDUJr3m5WU6wgUgAPd6E68cDdjn0Dp13K4ytbn808YarmMcWJmhWflpTj2sVbEHguuaNd1CL-6Mw_wZ3N_QFzZCfHDDjHcLIYXlfWMtNMUPUoAnAvb14XTwzj-KItdO1jMrWVbOu7DFXO3ZLaHJg96AwI3QDDwYfHiGkxrFzkZe0Kx-V1xYTJG_3NP58LbPxMLudX2xttiqO"
+					/>
+				</div>
+				<div class="relative z-10 space-y-4">
+					<h1 class="text-5xl font-black tracking-tight text-white md:text-7xl">Blog</h1>
+					<p class="mx-auto max-w-2xl text-lg font-light text-white/90 italic md:text-xl">
+						Insights for a balanced mind and body. Explore the intersection of neuroscience and
+						mindfulness.
+					</p>
+					<button
+						class="mt-6 rounded-xl bg-primary px-8 py-3 font-bold text-background-dark transition-transform hover:scale-105"
+					>
+						View Latest Discoveries
+					</button>
+				</div>
+			</section>
+			<!-- Category Filters -->
+			<div class="mb-12 flex flex-wrap items-center justify-center gap-3">
+				<button class="rounded-full bg-primary px-6 py-2 text-sm font-bold text-background-dark">
+					All Posts
+				</button>
+				<button
+					class="rounded-full bg-primary/10 px-6 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-primary/20 dark:text-slate-300"
+				>
+					Mindfulness
+				</button>
+				<button
+					class="rounded-full bg-primary/10 px-6 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-primary/20 dark:text-slate-300"
+				>
+					Neurofeedback
+				</button>
+				<button
+					class="rounded-full bg-primary/10 px-6 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-primary/20 dark:text-slate-300"
+				>
+					Anxiety
+				</button>
+				<button
+					class="rounded-full bg-primary/10 px-6 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-primary/20 dark:text-slate-300"
+				>
+					Resilience
+				</button>
+			</div>
+			<!-- Blog Post Grid -->
+			<div class="mb-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+				<!-- Post 1 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="A serene foggy morning in a pine forest"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							data-alt="A serene foggy morning in a pine forest"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1lCUeXBxuRBeuQ9uXIwvwgJF7xFxdit07lwlvw_w5m3TGpfXST_SkKmFJKXKiMN9x3rvxk8nOoy4CXoa7Jddlv5Fp3kb31fUKezzcs1thcV_z-DgEFsdZCEKhixSQdfyPMD5nZfcjBZvAIulsSDTTAXNjc6qQ5Xh0PVuUFUAi5SzPjTXQAGkgAKTKb4nfgYJjWajXxRP6cOhwirL5CP3Zo9jhH89yJHsTpEa4JY0E41q6dtT5ACeG9pyUWLjWdRvba5cJT1mgnscN"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase"
+							>Mindfulness</span
+						>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							The Science of Stillness: How Mindfulness Rewires the Brain
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Explore how daily mindfulness practices can physically change brain structure for
+							better emotional regulation and clarity.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+				<!-- Post 2 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="Close-up of fresh morning dew on a vibrant green leaf"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							data-alt="Close-up of fresh morning dew on a vibrant green leaf"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRWk7NcUsPaqH2sKGNU8vyLquwDGPC565hYg3c-swEULnBg4BpZS9bVXTPkmgULbjOeVXKTgLMNlv_EwTO17pLkzqVMgqVZNACDin2OoJ7hli-bLwlGkiNPl_68H4okiQ1YIgSAQfYHzcl0NgClm90_zR0MxOlNRONFAC4t0ooInsHvn4AiL0d93oJzNrWpwa6k-bumEHqXE3Wgb7k87YP9qCInf-1mzuzZVFCl5zaPW_gYpeDRIQcq5RnddTyEJmw8X1uiiUrrFUc"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase"
+							>Neurofeedback</span
+						>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							Neurofeedback 101: Training Your Mind for Peak Performance
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Learn the basics of brain training and how it can help you achieve mental clarity,
+							focus, and sustainable cognitive health.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+				<!-- Post 3 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="Golden hour sunlight filtering through lush tree branches"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							data-alt="Golden hour sunlight filtering through lush tree branches"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQifhvt0d9OeQlYCOr7saFO5ZX-8-U9R5b6CLAhfwLVlUu0F_bFzsHCkT2V4kpsjq51UhwKyFrcYxPCNfs062nMYIZ_Hw8p5s5zpacmiEZJun0wA7HMjVhjQzuee4ErXoMt1SqlSCDVdhXTSvNNMPqHND9g69cWGyDGuHW0NCqsCOidIPYtaCGDRY49lqC_e6DwZHHXTauRKfp1iwWIRRG-REnPRfWEq04-S2Is9E7Dv8rd3ftiNdNqqVCB_07kCjrJV2BPypvhuWJ"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase"
+							>Resilience</span
+						>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							Cultivating Resilience in Uncertain Times
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Practical strategies for maintaining mental well-being and inner strength during
+							life's most challenging and volatile periods.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+				<!-- Post 4 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="Smooth river stones at the edge of clear flowing water"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							data-alt="Smooth river stones at the edge of clear flowing water"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-B2D5c-ezQk3ypNtdBG4RbOdhfvkfp9HqyAzAgaBH2o5Fhzv9jWMjb7GLiItRGUTyYA3SUH3sVu7XEOh-t2I0XEd_Sp6DG9eOm_6Rg61HlOcT2OJ_bDaDuEolxdsvhj1t-Es9sQ_y3Dx6f2UTfLXZeYxuCLCYyIc8EP8QOR-6vCmTXvsWfr1JhSfbaGYrIxma0V0pmytMRQlapEq9IeJtwgxKQBT_VRkQXaBmdlh8ltyF-RFvnV6TQJ_l6fkhKACyGxsCxpVTRG3A"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase"
+							>Health</span
+						>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							Understanding the Gut-Brain Connection
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Discover the fascinating link between your digestive system and your emotional health,
+							and how to nurture both.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+				<!-- Post 5 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="Close-up of a green seedling sprouting from dark soil"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHr_509y_tS5H7vW5z_fX4X9E-u-n_W_7X_5_P_4_X_3_H_2_V_1_L_0_T_9_S_8_R_7_Q_6_P_5_O_4_N_3_M_2_L_1_K_0_J_9_I_8_H_7_G_6_F_5_E_4_D_3_C_2_B_1_A"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase"
+							>Growth</span
+						>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							The Psychology of Post-Traumatic Growth
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Understanding how individuals can find positive change and renewed purpose following
+							significant life challenges.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+				<!-- Post 6 -->
+				<article
+					class="group flex flex-col overflow-hidden rounded-xl border border-primary/5 bg-white shadow-sm transition-all hover:shadow-xl dark:bg-slate-800/50"
+				>
+					<div class="h-64 overflow-hidden">
+						<img
+							alt="Soft light hitting a peaceful bedroom interior"
+							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHr_509y_tS5H7vW5z_fX4X9E-u-n_W_7X_5_P_4_X_3_H_2_V_1_L_0_T_9_S_8_R_7_Q_6_P_5_O_4_N_3_M_2_L_1_K_0_J_9_I_8_H_7_G_6_F_5_E_4_D_3_C_2_B_1_A"
+						/>
+					</div>
+					<div class="flex flex-1 flex-col p-6">
+						<span class="mb-3 text-xs font-bold tracking-widest text-primary uppercase">Sleep</span>
+						<h3
+							class="mb-3 text-2xl leading-tight font-bold transition-colors group-hover:text-primary"
+						>
+							Neuroscience of Sleep: Why Rest is Your Superpower
+						</h3>
+						<p class="mb-6 flex-1 text-base text-slate-600 italic dark:text-slate-400">
+							Dive into the biological processes that occur while you sleep and how quality rest
+							impacts your cognitive function.
+						</p>
+						<a class="group/link flex items-center gap-2 font-bold text-primary" href="#">
+							Read More
+							<span
+								class="material-symbols-outlined text-sm transition-transform group-hover/link:translate-x-1"
+								>arrow_forward</span
+							>
+						</a>
+					</div>
+				</article>
+			</div>
+			<!-- Pagination -->
+			<nav aria-label="Page navigation" class="mb-20 flex items-center justify-center gap-2">
+				<button
+					aria-label="Previous page"
+					class="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/20 text-slate-500 transition-colors hover:bg-primary/10 disabled:cursor-not-allowed disabled:opacity-30"
+					disabled=""
+				>
+					<span class="material-symbols-outlined">chevron_left</span>
+				</button>
+				<button
+					aria-current="page"
+					class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary font-bold text-background-dark shadow-md shadow-primary/20"
+				>
+					1
+				</button>
+				<button
+					class="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/20 font-medium text-slate-600 transition-colors hover:bg-primary/10 dark:text-slate-400"
+				>
+					2
+				</button>
+				<button
+					class="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/20 font-medium text-slate-600 transition-colors hover:bg-primary/10 dark:text-slate-400"
+				>
+					3
+				</button>
+				<span class="px-1 text-slate-400">...</span>
+				<button
+					class="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/20 font-medium text-slate-600 transition-colors hover:bg-primary/10 dark:text-slate-400"
+				>
+					8
+				</button>
+				<button
+					aria-label="Next page"
+					class="flex h-10 w-10 items-center justify-center rounded-lg border border-primary/20 text-slate-500 transition-colors hover:bg-primary/10"
+				>
+					<span class="material-symbols-outlined">chevron_right</span>
+				</button>
+			</nav>
+			<!-- Newsletter Section -->
+			<section
+				class="rounded-3xl border border-primary/20 bg-primary/5 p-8 text-center md:p-16 dark:bg-primary/10"
+			>
+				<div class="mx-auto max-w-2xl space-y-6">
+					<h2 class="text-4xl font-black tracking-tight md:text-5xl">
+						Subscribe to our newsletter
+					</h2>
+					<p class="text-lg font-light text-slate-700 dark:text-slate-300">
+						Receive calming insights, mental health tips, and the latest research directly in your
+						inbox every month.
+					</p>
+					<div class="flex flex-col gap-3 pt-4 sm:flex-row">
+						<input
+							class="flex-1 rounded-xl border-none bg-white px-6 py-4 text-slate-900 shadow-sm outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-primary dark:bg-slate-900 dark:text-slate-100"
+							placeholder="Your email address"
+							type="email"
+						/>
+						<button
+							class="rounded-xl bg-primary px-8 py-4 font-bold whitespace-nowrap text-background-dark shadow-lg shadow-primary/20 transition-all hover:opacity-90"
+						>
+							Join the Community
+						</button>
+					</div>
+					<p class="text-xs text-slate-500">We respect your privacy. Unsubscribe at any time.</p>
+				</div>
+			</section>
+		</main>
+		<!-- Simple Footer -->
+		<footer class="border-t border-primary/10 px-4 py-12 text-center">
+			<div
+				class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-8 md:flex-row"
+			>
+				<div class="flex items-center gap-3">
+					<div class="text-primary/60">
+						<svg
+							class="h-6 w-6"
+							fill="currentColor"
+							viewbox="0 0 48 48"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+						</svg>
+					</div>
+					<span class="font-bold text-slate-500">Integro Psychotherapy</span>
+				</div>
+				<div class="flex gap-8 text-sm font-medium text-slate-500">
+					<a class="transition-colors hover:text-primary" href="#">Privacy Policy</a>
+					<a class="transition-colors hover:text-primary" href="#">Terms of Service</a>
+					<a class="transition-colors hover:text-primary" href="#">Cookies</a>
+				</div>
+				<div class="text-sm text-slate-400">© 2024 Integro. All rights reserved.</div>
+			</div>
+		</footer>
+	</body>
+</html>

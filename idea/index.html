@@ -1,0 +1,389 @@
+<!doctype html>
+
+<html class="light" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Integro | Psychotherapy &amp; NeuroFeedback</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#19e63c',
+							'background-light': '#f6f8f6',
+							'background-dark': '#112114',
+						},
+						fontFamily: {
+							display: ['Newsreader', 'serif'],
+						},
+						borderRadius: {
+							DEFAULT: '0.5rem',
+							lg: '1rem',
+							xl: '1.5rem',
+							full: '9999px',
+						},
+					},
+				},
+			};
+		</script>
+		<style>
+			body {
+				font-family: 'Newsreader', serif;
+			}
+		</style>
+	</head>
+
+	<body
+		class="bg-background-light text-slate-900 antialiased transition-colors duration-300 dark:bg-background-dark dark:text-slate-100"
+	>
+		<!-- Top Navigation Bar -->
+		<header
+			class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80"
+		>
+			<div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+				<div class="flex items-center gap-3">
+					<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/20">
+						<span class="material-symbols-outlined text-primary">psychology</span>
+					</div>
+					<h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+						Integro
+					</h1>
+				</div>
+				<nav class="hidden items-center gap-10 md:flex">
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#philosophy"
+						>Philosophy</a
+					>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#neurofeedback"
+						>NeuroFeedback</a
+					>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#team"
+						>The Team</a
+					>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#contact"
+						>Contact</a
+					>
+				</nav>
+				<div class="flex items-center gap-4">
+					<button
+						class="rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-background-dark transition-all hover:shadow-lg hover:shadow-primary/20 active:scale-95"
+					>
+						Book Session
+					</button>
+				</div>
+			</div>
+		</header>
+		<main>
+			<!-- Hero Section -->
+			<section class="relative flex min-h-[85vh] items-center justify-center overflow-hidden px-6">
+				<div class="absolute inset-0 z-0">
+					<img
+						class="h-full w-full object-cover opacity-60 dark:opacity-40"
+						data-alt="Soothing sunlight filtering through lush green forest trees"
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtjH4A6mcS3nyhGk8im2YrPTEttEcvrFoMaUvZ6Zvj-q-68y3cTT-Y5WziMmSTqHPtSEU7Sx2g4b4Ava5LiRcwtLeQrT0FjZGCEbYNqMqWFax2pmwNt1UAT3yeRwEyXmw88Ts223c7sQ2gQC0AlO7F5DbuIzu-4jQ1fopbYQJOs6EXwJzY_wVSs3c98cElj_dLAl-bOmv-BpOtG179LS4kZQSs0iaZQ6GNPQeMBSqLNrNy-C4w8fXzbRv28Oiwzq38nAxcIEnU_ttu"
+					/>
+					<div
+						class="absolute inset-0 bg-gradient-to-b from-background-light/50 via-transparent to-background-light dark:from-background-dark/50 dark:to-background-dark"
+					></div>
+				</div>
+				<div class="relative z-10 max-w-4xl text-center">
+					<h1 class="mb-6 text-5xl leading-tight font-bold tracking-tight md:text-7xl">
+						Integrity of <span class="text-primary italic">Mind and Body</span>
+					</h1>
+					<p
+						class="mb-10 text-xl leading-relaxed font-light text-slate-700 md:text-2xl dark:text-slate-300"
+					>
+						A holistic approach to neurological and psychological well-being, bridging the gap
+						between biological feedback and emotional processing.
+					</p>
+					<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+						<button
+							class="w-full rounded-xl bg-primary px-10 py-4 text-lg font-bold text-background-dark transition-all hover:brightness-110 sm:w-auto"
+						>
+							Start Your Journey
+						</button>
+						<button
+							class="w-full rounded-xl border border-primary/20 bg-primary/10 px-10 py-4 text-lg font-bold text-slate-900 transition-all hover:bg-primary/20 sm:w-auto dark:text-slate-100"
+						>
+							Explore Services
+						</button>
+					</div>
+				</div>
+			</section>
+			<!-- Presentation Section (Philosophy) -->
+			<section class="mx-auto max-w-7xl px-6 py-24" id="philosophy">
+				<div class="flex flex-col items-center gap-16 lg:flex-row">
+					<div class="flex-1 space-y-8">
+						<div
+							class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 text-sm font-bold tracking-widest text-primary uppercase"
+						>
+							The Integro Philosophy
+						</div>
+						<h2 class="text-4xl leading-tight font-bold md:text-5xl">
+							Nurturing balance through evidence-based care.
+						</h2>
+						<p class="text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+							At Integro, we believe that true healing happens at the intersection of biological
+							awareness and psychological insight. Our practice is built on the foundation of
+							'integrity'—the state of being whole and undivided.
+						</p>
+						<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+							<div
+								class="rounded-xl border border-primary/10 bg-white p-6 transition-colors hover:border-primary/30 dark:bg-background-dark"
+							>
+								<span class="material-symbols-outlined mb-4 text-3xl text-primary">spa</span>
+								<h3 class="mb-2 text-xl font-bold">Mind-Body Unity</h3>
+								<p class="text-sm text-slate-600 dark:text-slate-400">
+									Treating the individual as an interconnected system rather than isolated symptoms.
+								</p>
+							</div>
+							<div
+								class="rounded-xl border border-primary/10 bg-white p-6 transition-colors hover:border-primary/30 dark:bg-background-dark"
+							>
+								<span class="material-symbols-outlined mb-4 text-3xl text-primary">verified</span>
+								<h3 class="mb-2 text-xl font-bold">Clinical Integrity</h3>
+								<p class="text-sm text-slate-600 dark:text-slate-400">
+									Evidence-based practices delivered with deep empathy and professional expertise.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex-1">
+						<div class="group relative aspect-square overflow-hidden rounded-xl shadow-2xl">
+							<img
+								class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+								data-alt="Abstract calming image of smooth river stones stacked in balance"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3txCK5k06qRMT-0e_hm-_Lo2JsVnXRjk3SVvEroOFU9iGQKFNgJT3MXTWcqgUbyBP40xdzfvJqEl4pnICDZmcXpq-8dwNpS_pLzg4Z8lmYl4CfQ5jyYGbdXwfYXTe4yNocltVt8-4o1j405bHD5D3C5YhfwOW2KfLhqAAavrvWvbOZGXxBQlz3dWZ2Ii_IfINTQ6N8AAYv0qKf42crDQ1XzKwy9CYTlMp-mmCfTiXlWST62XM0MV_WIu18cX2LSfRjvA-np7oEaKs"
+							/>
+							<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- NeuroFeedback Section -->
+			<section class="bg-white py-24 dark:bg-slate-900/50" id="neurofeedback">
+				<div class="mx-auto max-w-7xl px-6">
+					<div class="mb-16 space-y-4 text-center">
+						<h2 class="text-4xl font-bold md:text-5xl">Advanced Neural Training</h2>
+						<p class="mx-auto max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+							Harnessing the power of brain plasticity to optimize your mental performance and
+							emotional stability.
+						</p>
+					</div>
+					<div class="grid items-stretch gap-12 lg:grid-cols-2">
+						<div
+							class="flex flex-col justify-center space-y-6 rounded-xl bg-background-light p-8 md:p-12 dark:bg-background-dark"
+						>
+							<h3 class="text-3xl font-bold">What is NeuroFeedback?</h3>
+							<p class="leading-relaxed text-slate-600 dark:text-slate-400">
+								NeuroFeedback is a non-invasive, drug-free training system that helps you reorganize
+								your brain patterns. By providing real-time biological feedback, your brain learns
+								to regulate itself more efficiently.
+							</p>
+							<ul class="space-y-4">
+								<li class="flex items-start gap-3">
+									<span class="material-symbols-outlined mt-1 text-primary">check_circle</span>
+									<span>Improve focus and cognitive clarity</span>
+								</li>
+								<li class="flex items-start gap-3">
+									<span class="material-symbols-outlined mt-1 text-primary">check_circle</span>
+									<span>Reduce anxiety and stress responses</span>
+								</li>
+								<li class="flex items-start gap-3">
+									<span class="material-symbols-outlined mt-1 text-primary">check_circle</span>
+									<span>Optimize sleep patterns and recovery</span>
+								</li>
+							</ul>
+							<button
+								class="group flex w-fit items-center gap-2 font-bold text-primary transition-all hover:gap-4"
+							>
+								Learn more about the technology
+								<span class="material-symbols-outlined">arrow_forward</span>
+							</button>
+						</div>
+						<div class="relative overflow-hidden rounded-xl">
+							<img
+								class="h-full w-full object-cover"
+								data-alt="Abstract neural network visualization with soft glowing lights"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYbWH4DdVDl7aFXiTwEYlZQ2fsr2Jx7c22774UzJwDbBeHgAiTzCvFXFI6UHfmlKTTSR6UUP1auhyaUPvHUCFW8v2EhIPUWMFGqo7HPbqoukaPSi7nOdiV7RSpIoSpmKl_F9x6O9cpm8Nt8Uh48ctlqaMZ6BfgDUGScAJuhgbbtG-1tJCD0i2RG-tZw2Ozu-GsVmo59mdQobF4bifRu4KIFWXLcuPcEaLVffBdKDnv24HkHvCdSdHd9kmlphDZsjYdiJgwfew3psaD"
+							/>
+							<div
+								class="absolute inset-0 bg-gradient-to-r from-background-dark/40 to-transparent"
+							></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Meet the Team Section -->
+			<section class="mx-auto max-w-7xl px-6 py-24" id="team">
+				<div
+					class="flex flex-col items-center gap-16 rounded-xl bg-background-light p-8 md:flex-row md:p-16 dark:bg-background-dark"
+				>
+					<div class="w-full md:w-1/3">
+						<div
+							class="aspect-[3/4] overflow-hidden rounded-xl border-4 border-white shadow-xl dark:border-slate-800"
+						>
+							<img
+								class="h-full w-full object-cover"
+								data-alt="Professional portrait of a female psychotherapist in a clinical setting"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4Um6IMBiu9h2PTy3GjDM1_I7nlXrCaPxOdXGaM5YlNyuZ4LPBtlZzNv6dxwGVmil0nohux5hlATxjaCJyt83O6F_-3W7aUuKpLIoFfjHgUi2lNsQOUTvwD4mUu9Sqr7uZhhx6ULxklhQkTzEbjd3bcGZ7fxaC7uM4u8mjo-qmiSPeY8lHnScThN7HEY_TiBdTXin9mRqNgd78g9jdykOHBBf-68blY3nNAb-_18gOs6-p_Iyp7ig9kvO2V52DSfcy1gX1sRwWxcJI"
+							/>
+						</div>
+					</div>
+					<div class="w-full space-y-6 md:w-2/3">
+						<div class="space-y-2">
+							<h2 class="text-4xl font-bold">Dr. Elena Thorne</h2>
+							<p class="text-lg font-medium tracking-wide text-primary uppercase">
+								Lead Practitioner &amp; Founder
+							</p>
+						</div>
+						<p class="text-xl leading-relaxed text-slate-700 italic dark:text-slate-300">
+							"My mission is to help you rediscover the inherent harmony between your mind and body,
+							providing the tools for lasting resilience and growth."
+						</p>
+						<p class="text-slate-600 dark:text-slate-400">
+							With over 15 years of experience in clinical psychology and neurological research, Dr.
+							Thorne specializes in integrating NeuroFeedback with somatic therapy. Her empathetic
+							approach is grounded in the latest scientific advancements in brain plasticity and
+							trauma-informed care.
+						</p>
+						<div class="flex gap-4 pt-4">
+							<button
+								class="rounded-full bg-primary/20 p-3 text-background-dark transition-all hover:bg-primary/30 dark:text-slate-100"
+							>
+								<span class="material-symbols-outlined">mail</span>
+							</button>
+							<button
+								class="rounded-full bg-primary/20 p-3 text-background-dark transition-all hover:bg-primary/30 dark:text-slate-100"
+							>
+								<span class="material-symbols-outlined">share</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- CTA Section -->
+			<section class="bg-primary px-6 py-24 text-center text-background-dark">
+				<div class="mx-auto max-w-3xl space-y-8">
+					<h2 class="text-4xl font-bold md:text-5xl">Ready to find your balance?</h2>
+					<p class="text-xl font-medium opacity-90">
+						Schedule a consultation today to explore how our integrated approach can support your
+						journey toward mental and physical integrity.
+					</p>
+					<div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+						<button
+							class="rounded-xl bg-background-dark px-10 py-4 text-lg font-bold text-white transition-all hover:scale-105"
+						>
+							Book Your First Session
+						</button>
+						<button
+							class="rounded-xl border-2 border-background-dark bg-transparent px-10 py-4 text-lg font-bold text-background-dark transition-all hover:bg-background-dark hover:text-white"
+						>
+							Contact Us
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer
+			class="border-t border-primary/10 bg-background-light px-6 py-12 dark:bg-background-dark"
+		>
+			<div class="mx-auto mb-12 grid max-w-7xl gap-12 md:grid-cols-5">
+				<div class="col-span-2 space-y-6">
+					<div class="flex items-center gap-3">
+						<div class="flex h-8 w-8 items-center justify-center rounded bg-primary">
+							<span class="material-symbols-outlined text-sm text-background-dark">psychology</span>
+						</div>
+						<span class="text-xl font-bold">Integro</span>
+					</div>
+					<p class="max-w-sm text-slate-600 dark:text-slate-400">
+						A serene sanctuary for neurological and psychological growth, committed to the integrity
+						of mind and body.
+					</p>
+				</div>
+				<div>
+					<h4 class="mb-4 font-bold">Practice</h4>
+					<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+						<li><a class="transition-colors hover:text-primary" href="#">Philosophy</a></li>
+						<li><a class="transition-colors hover:text-primary" href="#">NeuroFeedback</a></li>
+						<li><a class="transition-colors hover:text-primary" href="#">Somatic Therapy</a></li>
+						<li><a class="transition-colors hover:text-primary" href="#">Resources</a></li>
+					</ul>
+				</div>
+				<div class="col-span-1 grid grid-cols-1 gap-8 sm:grid-cols-2 md:col-span-2">
+					<div>
+						<h4 class="mb-4 font-bold">Contact</h4>
+						<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+							<li class="flex items-center gap-2">
+								<span class="material-symbols-outlined text-sm text-primary">location_on</span> 123
+								Serenity Lane
+							</li>
+							<li class="pl-7">San Francisco, CA 94102</li>
+							<li class="mt-4 flex items-center gap-2">
+								<span class="material-symbols-outlined text-sm text-primary">mail</span>
+								contact@integro.com
+							</li>
+							<li class="flex items-center gap-2">
+								<span class="material-symbols-outlined text-sm text-primary">phone</span> (555)
+								123-4567
+							</li>
+						</ul>
+					</div>
+					<div class="space-y-4">
+						<h4 class="mb-4 font-bold">Our Location</h4>
+						<div
+							class="group relative aspect-video w-full overflow-hidden rounded-xl border border-primary/20 shadow-sm"
+						>
+							<img
+								class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+								data-alt="A stylized, minimalist map with soft green tones showing the location of the practice"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtP2T8o_zXN7jI_h3R_8H2D5v7G3k-9fVw_W6L_T-m8y5I-H4N_O1k_J8E"
+							/>
+							<div class="absolute inset-0 bg-primary/5 mix-blend-multiply"></div>
+							<div class="absolute inset-0 flex items-center justify-center">
+								<div
+									class="flex h-8 w-8 animate-pulse items-center justify-center rounded-full bg-primary shadow-lg"
+								>
+									<span class="material-symbols-outlined text-sm text-background-dark"
+										>location_on</span
+									>
+								</div>
+							</div>
+							<div class="absolute right-2 bottom-2">
+								<button
+									class="rounded-md border border-primary/20 bg-white/90 px-3 py-1 text-[10px] font-bold tracking-wider uppercase backdrop-blur transition-colors hover:bg-primary hover:text-white dark:bg-background-dark/90"
+								>
+									Get Directions
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 border-t border-primary/5 pt-8 text-xs tracking-widest text-slate-500 uppercase md:flex-row"
+			>
+				<p>© 2024 Integro Psychotherapy. All rights reserved.</p>
+				<div class="flex gap-8">
+					<a class="hover:text-primary" href="#">Privacy Policy</a>
+					<a class="hover:text-primary" href="#">Terms of Service</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

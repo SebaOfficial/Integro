@@ -1,0 +1,422 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>The Science of Stillness | Integro Psychotherapy</title>
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#19e63c',
+							'background-light': '#f6f8f6',
+							'background-dark': '#112114',
+						},
+						fontFamily: {
+							display: ['Newsreader', 'serif'],
+						},
+						borderRadius: { DEFAULT: '0.5rem', lg: '1rem', xl: '1.5rem', full: '9999px' },
+					},
+				},
+			};
+		</script>
+		<style>
+			body {
+				font-family: 'Newsreader', serif;
+			}
+			.progress-bar-container {
+				position: sticky;
+				top: 0;
+				z-index: 50;
+			}
+		</style>
+	</head>
+	<body
+		class="bg-background-light text-slate-900 transition-colors duration-300 dark:bg-background-dark dark:text-slate-100"
+	>
+		<!-- Top Navigation -->
+		<header
+			class="sticky top-0 z-50 border-b border-primary/10 bg-white/80 backdrop-blur-md dark:bg-background-dark/80"
+		>
+			<nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+				<div class="flex items-center gap-3">
+					<div
+						class="flex items-center justify-center rounded-lg bg-primary p-1.5 text-background-dark"
+					>
+						<span class="material-symbols-outlined text-2xl font-bold">eco</span>
+					</div>
+					<h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Integro</h1>
+				</div>
+				<div class="hidden items-center gap-10 md:flex">
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">Services</a>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">About</a>
+					<a class="text-sm font-medium text-primary" href="#">Blog</a>
+					<a class="text-sm font-medium transition-colors hover:text-primary" href="#">Contact</a>
+				</div>
+				<div class="flex items-center gap-4">
+					<button
+						class="transform rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-background-dark transition-all hover:scale-105 hover:bg-primary/90"
+					>
+						Book Session
+					</button>
+				</div>
+			</nav>
+			<!-- Reading Progress Bar -->
+			<div class="h-1 w-full bg-primary/10">
+				<div class="h-full bg-primary" style="width: 35%"></div>
+			</div>
+		</header>
+		<main class="min-h-screen">
+			<!-- Hero Section -->
+			<section class="relative flex h-[60vh] w-full items-end md:h-[70vh]">
+				<div class="absolute inset-0 z-0">
+					<img
+						alt="Misty evergreen forest with sunlight filtering through trees"
+						class="h-full w-full object-cover"
+						data-alt="Peaceful misty forest with sunlight filtering through tall trees"
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8ZjeRr_c_8KvqXIoMXkIPTAj6FxVj4ZzBV15Zk1zSYvKIVrt6X8yKcUCu9sWL5mDWzyxB2atyMEeoNB8--DgorM8hP_h0Hx3npY4LPW7PMFrf0iiK91qENwk2eSIm8coW_28bz-mPoH5p3s89imqSMwD1r9ZEJVdKy8RrkwbWABMNVcHB6V_2Rt2nAz8v2qimFL-1hbLF_3qw5qgovhroQEtTAWIIvPPue_uvPM9jAMTqoSB22U2vEutDtFwt6Q-VcbjhsPoNR4cH"
+					/>
+					<div
+						class="absolute inset-0 bg-gradient-to-t from-background-light via-background-light/40 to-transparent dark:from-background-dark dark:via-background-dark/60"
+					></div>
+				</div>
+				<div class="relative z-10 mx-auto w-full max-w-4xl px-6 pb-12">
+					<nav
+						class="mb-6 flex items-center gap-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+					>
+						<a class="hover:text-primary" href="#">Home</a>
+						<span class="material-symbols-outlined text-xs">chevron_right</span>
+						<a class="hover:text-primary" href="#">Blog</a>
+						<span class="material-symbols-outlined text-xs">chevron_right</span>
+						<span class="text-primary">Neuroscience</span>
+					</nav>
+					<h1 class="mb-8 text-4xl leading-tight font-bold md:text-6xl">
+						The Science of Stillness: How Mindfulness Rewires the Brain
+					</h1>
+					<div
+						class="flex items-center gap-6 rounded-xl border border-white/20 bg-white/50 p-4 backdrop-blur-sm dark:bg-white/5"
+					>
+						<img
+							alt="Portrait of Dr. Elena Thorne"
+							class="h-16 w-16 rounded-full border-2 border-primary/20 object-cover"
+							data-alt="Professional portrait of a female psychologist smiling warmly"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdr0QRJg2vuGMcX-EBduTS4QFlzhx6kxfmyMrlOgs7Ll-zfkhcq0wm18vI6wwurz8DC_sJIy83y4yjMsVCGv_928sgSVTdkw4C5PgO3yEU58G-4T4H9Jcdj2aymHnq4dzqMZ_4hkOVi4ZGoFV2erhh2yBMnKinZihaX3Nc2oHpJPQGMkvZ8MNM-_uWlin9CXLwaFhflbq3-7uZAo-Otf_kz49d6DKlas6EvO4gdYY1iwlHco8MNbWxI_sSACMhKU5hsEVSz0-KqTu7"
+						/>
+						<div>
+							<p class="text-lg font-bold">Dr. Elena Thorne</p>
+							<p class="text-sm text-slate-600 dark:text-slate-400">
+								Clinical Psychologist • Oct 24, 2023 • 8 min read
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Article Content -->
+			<article class="mx-auto max-w-3xl px-6 py-16">
+				<div class="prose prose-lg prose-slate dark:prose-invert">
+					<p
+						class="mb-8 text-xl leading-relaxed first-letter:float-left first-letter:mr-3 first-letter:text-5xl first-letter:font-bold first-letter:text-primary"
+					>
+						For decades, the scientific community viewed the adult brain as a static organ, fixed in
+						its pathways and capabilities. Today, we understand the concept of neuroplasticity—the
+						brain’s remarkable ability to reorganize itself by forming new neural connections
+						throughout life. Among the most potent tools for this rewiring is the practice of
+						stillness.
+					</p>
+					<h2 class="mt-12 mb-6 text-3xl font-bold">
+						The Prefrontal Cortex and Emotional Regulation
+					</h2>
+					<p class="mb-6 leading-relaxed">
+						The prefrontal cortex is the seat of executive function: decision-making, concentration,
+						and emotional regulation. Studies using functional MRI scans have shown that consistent
+						mindfulness practice actually increases gray matter density in this region. This
+						structural change translates to a better ability to manage stress and respond
+						thoughtfully rather than react impulsively.
+					</p>
+					<!-- Pull Quote Section -->
+					<div class="relative my-12 border-y border-primary/20 py-10">
+						<span
+							class="material-symbols-outlined absolute -top-4 left-1/2 -translate-x-1/2 bg-background-light px-4 text-4xl font-bold text-primary dark:bg-background-dark"
+							>format_quote</span
+						>
+						<blockquote
+							class="mx-auto max-w-2xl text-center font-display text-3xl leading-tight italic md:text-4xl"
+						>
+							"Stillness is not the absence of movement, but the presence of focus."
+						</blockquote>
+						<p class="mt-4 text-center font-bold text-primary">— Integro Philosophy</p>
+					</div>
+					<h2 class="mt-12 mb-6 text-3xl font-bold">
+						Shrinking the Amygdala: The End of Fight-or-Flight
+					</h2>
+					<p class="mb-6 leading-relaxed">
+						While the prefrontal cortex grows, the amygdala—the brain's "alarm system" responsible
+						for the fight-or-flight response—shows a decrease in size and cellular activity. This
+						reduction in the amygdala’s volume correlates with lower perceived stress levels. In
+						essence, the brain becomes less reactive to the minor irritations and major stressors of
+						modern life.
+					</p>
+					<div class="my-10 overflow-hidden rounded-xl shadow-xl">
+						<img
+							alt="Woman meditating in a sunlit room"
+							class="h-auto w-full"
+							data-alt="Serene woman meditating in a bright sunlit minimalist room"
+							src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtamElujNfbsvP54iNTqOCebch6f1K1YCz6Usg9YjFFkcp1r9p3Fd86MHXDZGuXwFPAr657_obIuCJ3GTvpRF7AbnKiPUYNIrWTlOsNmw4NdqU-tZa-RaODFvrLtDCxUaTU3t9Cl2oOfNk3vXsU_TlLgXln-ZNRo5TPAAIIRogPTefj42lUGGSvM5fzuRd_tSHpStNdTv6x1SdZG9_GrbNuaSMTmc4jT3qi9_CdnYXGWpyUv5OJWVbj804NHnfcQq7dBFZYlQmSV2X"
+						/>
+					</div>
+					<p class="mb-6 leading-relaxed">
+						Practicing stillness doesn't mean clearing the mind of all thoughts—which is nearly
+						impossible. Instead, it involves observing thoughts as they arise without judgment. This
+						meta-awareness is what drives the neurobiological shifts we observe in long-term
+						practitioners.
+					</p>
+				</div>
+				<!-- Author Bio Section -->
+				<div
+					class="mt-20 flex flex-col items-center gap-8 rounded-xl border border-primary/10 bg-primary/5 p-8 md:flex-row"
+				>
+					<img
+						alt="Dr. Elena Thorne"
+						class="h-24 w-24 rounded-full object-cover"
+						data-alt="Portrait of professional therapist Dr Elena Thorne"
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGqAlW87XP8Z2HyTJP5Ii1d1qgiMbtk2bcXodd350QZ_bl0om0D7vRHXtygAaYkZFzEV6VyBtJYnB6f2uk8mbn8etiZ8yZKTZVzbH4OEkG_OvUt4Y5ER8PpB-u3DOTgnugF4apXxSEKQjXzDRRgP0l0Ysue93Q3yj11IThN8bNuBSxkEf3eMuJgjJXIztdT4msG4kYEF0nD8UgAGlEdNFJH96TQDthyscZ8D1vGVGJhyouBDk7ug7SGVc4SyM4axAo-hR74goQrRK"
+					/>
+					<div class="text-center md:text-left">
+						<h4 class="mb-2 text-xl font-bold">About Dr. Elena Thorne</h4>
+						<p class="leading-relaxed text-slate-600 dark:text-slate-400">
+							Dr. Thorne is a Clinical Psychologist at Integro specializing in mindfulness-based
+							cognitive therapy. She has spent over 15 years researching the intersection of
+							neurological health and meditative practices.
+						</p>
+						<div class="mt-4 flex justify-center gap-4 md:justify-start">
+							<a class="text-sm font-bold text-primary hover:underline" href="#">View Profile</a>
+							<a class="text-sm font-bold text-primary hover:underline" href="#"
+								>Follow on LinkedIn</a
+							>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- Related Articles -->
+			<section class="bg-primary/5 py-20">
+				<div class="mx-auto max-w-7xl px-6">
+					<div class="mb-12 flex items-end justify-between">
+						<div>
+							<h3 class="mb-2 text-3xl font-bold">Continue Reading</h3>
+							<p class="text-slate-600 dark:text-slate-400">
+								Explore more insights from our clinical team
+							</p>
+						</div>
+						<a
+							class="flex items-center gap-2 font-bold text-primary transition-all hover:gap-3"
+							href="#"
+						>
+							Back to Blog <span class="material-symbols-outlined">arrow_forward</span>
+						</a>
+					</div>
+					<div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+						<!-- Article Card 1 -->
+						<div
+							class="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md dark:bg-slate-900"
+						>
+							<img
+								alt="Person journal writing"
+								class="h-48 w-full object-cover"
+								data-alt="Overhead view of person journaling in a notebook"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgfgXPFlW_0FuVCdJWX7NshKFuVjDxpRdUzdKtybshh75Oho8q0ZEC17cuvWrfLC00WqlaMwE94pBvOWvvsUj8DOKyDA8FbPnQn6NKoixxh8kYphC5iGJc5SD6HbhrxWrOwRj_bfhn1LMAXuCIPoRzFBMl4XZioEG8z_yYmofd22moKnv2Y5WyDWasDudwgyDYBJAq41PNQyJevTlQE-ytMM1oCTvsx2iSwr8f8rHWqDsQtXKJxxukE0iqqJd4z8k9zRb3ozraInNu"
+							/>
+							<div class="p-6">
+								<span class="text-xs font-bold tracking-widest text-primary uppercase"
+									>Wellness</span
+								>
+								<h4 class="mt-2 mb-4 text-xl font-bold">
+									The Healing Power of Narrative: Why We Journal
+								</h4>
+								<p class="mb-6 text-sm text-slate-600 dark:text-slate-400">
+									How putting pen to paper can help process trauma and build resilience...
+								</p>
+								<a class="group flex items-center gap-1 text-sm font-bold" href="#">
+									Read More
+									<span
+										class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1"
+										>chevron_right</span
+									>
+								</a>
+							</div>
+						</div>
+						<!-- Article Card 2 -->
+						<div
+							class="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md dark:bg-slate-900"
+						>
+							<img
+								alt="Calm morning coffee"
+								class="h-48 w-full object-cover"
+								data-alt="Close up of steaming coffee mug on a wooden table"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJK1Eg6HdvKNGjAgwygDEj5eMM_Pcmp7_cW2QDqu0T2f2BqcoYbAzqLy3TNMOnFXiIt3zEnf0_Jw-eavB7adv4loZlEzV3TarYTDaOplULJLEiKj32sNwCDZX6NzcqihZxRWQMyQsrhVtDFjsPhgTDyMdGwFlSRAqNwv2NLwGdtLw0nGsmme5gE5-tGsPhqjFjX1hirnxb0td3quBbnKnLIN9AKyG4O8TgsX_d86-66gfz-h_lFOuVASZYhwb75HBLeOq7JUvZzfSo"
+							/>
+							<div class="p-6">
+								<span class="text-xs font-bold tracking-widest text-primary uppercase">Habits</span>
+								<h4 class="mt-2 mb-4 text-xl font-bold">Morning Rituals for Emotional Stability</h4>
+								<p class="mb-6 text-sm text-slate-600 dark:text-slate-400">
+									Small adjustments to your wake-up routine that can change your whole day...
+								</p>
+								<a class="group flex items-center gap-1 text-sm font-bold" href="#">
+									Read More
+									<span
+										class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1"
+										>chevron_right</span
+									>
+								</a>
+							</div>
+						</div>
+						<!-- Article Card 3 -->
+						<div
+							class="overflow-hidden rounded-xl bg-white shadow-sm transition-shadow hover:shadow-md dark:bg-slate-900"
+						>
+							<img
+								alt="Light through window"
+								class="h-48 w-full object-cover"
+								data-alt="Sunlight casting shadows through a modern window"
+								src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS9SR8JN_hkaiH3gPEVUngwE1Cl74P2yb4dMGti4kcUYg-0y-p3CLYp1dyhGRUe7VtrUN6hTTcOLWBr7TQ6MaVXdasA_eDHBHvayga1L7-BKO4k-7kN__75x1m9TshPnaYa2rzQh64iDhiVo0hk6DVZ7QCQA3ZvRnDB13vmMFBhOwm_JlAb9sjxhvkDAPpz3uDleKP4xLRPliOpAdzY7tdENb57r6KTUEzbJppVvOPQ_KJUlc7cmFhzuPSnoh2nOLLOLjlR0a_0lDm"
+							/>
+							<div class="p-6">
+								<span class="text-xs font-bold tracking-widest text-primary uppercase"
+									>Clinical</span
+								>
+								<h4 class="mt-2 mb-4 text-xl font-bold">
+									Understanding Cognitive Behavioral Therapy
+								</h4>
+								<h4 class="mt-2 mb-4 text-xl font-bold">Understanding CBT</h4>
+								<p class="mb-6 text-sm text-slate-600 dark:text-slate-400">
+									A deep dive into the evidence-based approach to mental wellness...
+								</p>
+								<a class="group flex items-center gap-1 text-sm font-bold" href="#">
+									Read More
+									<span
+										class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1"
+										>chevron_right</span
+									>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Newsletter Section -->
+			<section class="bg-background-dark py-20 text-white">
+				<div class="mx-auto max-w-4xl px-6 text-center">
+					<span class="material-symbols-outlined mb-6 text-5xl text-primary">mail</span>
+					<h2 class="mb-4 text-3xl font-bold md:text-4xl">Nurture your inbox</h2>
+					<p class="mb-8 text-lg text-slate-400">
+						Get monthly psychological insights and mindfulness tips delivered to you.
+					</p>
+					<form class="mx-auto flex max-w-lg flex-col gap-4 md:flex-row">
+						<input
+							class="flex-1 rounded-full border border-white/20 bg-white/10 px-6 py-4 focus:border-primary focus:outline-none"
+							placeholder="Your email address"
+							type="email"
+						/>
+						<button
+							class="rounded-full bg-primary px-8 py-4 font-bold text-background-dark transition-all hover:bg-primary/90"
+						>
+							Subscribe
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="border-t border-primary/10 bg-white py-16 dark:bg-background-dark">
+			<div class="mx-auto max-w-7xl px-6">
+				<div class="grid grid-cols-1 gap-12 md:grid-cols-4">
+					<div class="col-span-1 md:col-span-1">
+						<div class="mb-6 flex items-center gap-3">
+							<div class="rounded-lg bg-primary p-1 text-background-dark">
+								<span class="material-symbols-outlined text-xl">eco</span>
+							</div>
+							<h2 class="text-xl font-bold">Integro</h2>
+						</div>
+						<p class="mb-6 text-slate-600 dark:text-slate-400">
+							A center for integrative psychotherapy and psychological wellness. Helping you find
+							your center.
+						</p>
+						<div class="flex gap-4">
+							<a
+								class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary transition-all hover:bg-primary hover:text-white"
+								href="#"
+							>
+								<span class="material-symbols-outlined text-xl">public</span>
+							</a>
+							<a
+								class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary transition-all hover:bg-primary hover:text-white"
+								href="#"
+							>
+								<span class="material-symbols-outlined text-xl">camera_alt</span>
+							</a>
+						</div>
+					</div>
+					<div>
+						<h5 class="mb-6 font-bold">Services</h5>
+						<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+							<li>
+								<a class="transition-colors hover:text-primary" href="#">Individual Therapy</a>
+							</li>
+							<li>
+								<a class="transition-colors hover:text-primary" href="#">Couples Counseling</a>
+							</li>
+							<li>
+								<a class="transition-colors hover:text-primary" href="#">Mindfulness Workshops</a>
+							</li>
+							<li>
+								<a class="transition-colors hover:text-primary" href="#">Cognitive Assessment</a>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<h5 class="mb-6 font-bold">Support</h5>
+						<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+							<li><a class="transition-colors hover:text-primary" href="#">Contact Us</a></li>
+							<li>
+								<a class="transition-colors hover:text-primary" href="#">Emergency Resources</a>
+							</li>
+							<li><a class="transition-colors hover:text-primary" href="#">FAQ</a></li>
+							<li><a class="transition-colors hover:text-primary" href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div>
+						<h5 class="mb-6 font-bold">Office</h5>
+						<ul class="space-y-4 text-slate-600 dark:text-slate-400">
+							<li class="flex items-start gap-2">
+								<span class="material-symbols-outlined mt-1 text-sm text-primary">location_on</span>
+								<span>123 Serenity Lane,<br />Forest Park, OR 97205</span>
+							</li>
+							<li class="flex items-center gap-2">
+								<span class="material-symbols-outlined text-sm text-primary">call</span>
+								<span>(503) 555-0198</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mt-16 border-t border-primary/10 pt-8 text-center text-sm text-slate-500">
+					<p>© 2023 Integro Psychotherapy. All rights reserved. Designed for holistic wellness.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
