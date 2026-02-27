@@ -27,7 +27,7 @@
 			<a class="text-sm font-medium transition-colors hover:text-primary" href="/blog">
 				{locale.links.blog}
 			</a>
-			<a class="text-sm font-medium transition-colors hover:text-primary" href="/faq">
+			<a class="text-sm font-medium transition-colors hover:text-primary" href="/faqs">
 				{locale.links.faq}
 			</a>
 			<a
