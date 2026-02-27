@@ -20,7 +20,7 @@
 	</div>
 
 	<div class="relative z-10 mx-auto max-w-4xl px-4 text-center">
-		<span class="mb-6 block text-xs font-bold tracking-[0.4em] text-primary uppercase">
+		<span class="mb-6 block text-xs font-bold tracking-[0.4em] text-primary-dark dark:text-primary uppercase">
 			{locale.subtitle}
 		</span>
 		<h1 class="notranslate text-charcoal mb-8 font-serif text-6xl leading-tight md:text-8xl">
@@ -41,7 +41,7 @@
 				{locale.buttons.primary}
 			</a>
 			<a
-				class="w-full rounded-lg border border-primary/20 bg-white/20 dark:bg-black/20 px-10 py-4 text-center font-bold shadow-sm transition-all hover:bg-stone-50 sm:w-auto"
+				class="w-full rounded-lg border border-primary/20 bg-white/20 dark:bg-black/20 px-10 py-4 text-center font-bold shadow-sm transition-all hover:bg-stone-50/10 sm:w-auto"
 				href="/contatti"
 			>
 				{locale.buttons.secondary}
