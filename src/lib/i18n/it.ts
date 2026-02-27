@@ -56,7 +56,9 @@ const it = {
 	home: {
 		hero: {
 			title: ['Integrità della', 'Mente e del Corpo'],
-			description: 'Sudio di psicoterapia e training della mente a Piossasco',
+			subtitle: 'Studio di Psicoterapia e Training della Mente a Piossasco',
+			description:
+				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 			buttons: {
 				primary: 'Inizia il tuo percorso',
 				secondary: 'Contattaci',
